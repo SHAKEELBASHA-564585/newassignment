@@ -26,6 +26,7 @@ async function fetchDataFromAPI() {
       const itemContainer = document.createElement("div");
       itemContainer.className = "basha";
       const productTitle = document.createElement("h2");
+      productTitle.className="text"
       productTitle.textContent = product.product_title;
       itemContainer.appendChild(productTitle);
 

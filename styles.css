@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
 .menu{
@@ -10,6 +10,15 @@
 }
 .menu1{
     height:30px
+}
+
+@media screen and (max-width:500px){
+    .menu{
+        height:15px;
+    }
+    .menu1{
+        height:15px;
+    }
 }
 .input{
     width:320px;
@@ -24,10 +33,21 @@
 .input-container>li{
     padding-right: 20px;
 }
-
-.product-image{
-    width:150px
+@media screen and (max-width:500px){
+    .input-container>li{
+        padding-right: 10px;
+    } 
 }
+@media screen and (max-width:500px){
+    .input{
+        width:150px;
+        height:20px;
+        font-size:10px
+    }
+}
+
+
+
 .inner-list{
     display: flex;
     flex-direction: column;
@@ -48,16 +68,36 @@
     border:1px solid #E4E4E4;
     margin:8px;
     border-radius: 5px;
-    min-width:600px;
+    min-width:500px;
     align-self: center;
     margin-top:30px;
   }
   
+  @media screen and (max-width:500px){
+    .product-container{
+        min-width:250px;
+        margin:14px;
+    }
+  }
+
   .product-image {
     width: 200px; 
     height: auto; 
   }
-  
+  @media screen and (max-width:500px){
+    .product-image{
+        width:100px;
+        height:100px;
+    }
+}
+.text{
+    font-size:30px
+}
+@media screen and (max-width:500px){
+    .text{
+        font-size: 15px;
+    }
+}
   .badge {
     position: absolute;
     top: 0;
@@ -71,12 +111,24 @@
     margin: 0;
   }
   
- 
+ @media screen and (max-width:500px){
+    .badge{
+        font-size: 10px;
+        width:40px;
+    }
+ }
  
 .white{
     padding:10px;
     background-color: white;
     margin-bottom:3px;
+    width:100%;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width:500px){
+    .white{
+        font-size:10px
+    }
 }
 .highlight {
     color: black;
